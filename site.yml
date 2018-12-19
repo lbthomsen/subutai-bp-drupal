@@ -1,7 +1,7 @@
 # Ansible Playbook for Subutai WordPress blueprint
 ---
 
-- hosts: wp
+- hosts: drupal
   remote_user: root
   tasks:
 

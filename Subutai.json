@@ -1,7 +1,7 @@
 {
     "name": "${environmentName}",
-    "description": "Wordpress Standalone",
-    "version": "3.0.3",
+    "description": "Drupal",
+    "version": "0.0.1",
     "author": "https://github.com/lbthomsen",
     "containers": [
         {
@@ -25,7 +25,7 @@
         }
     ],
     "ansible-configuration": {
-        "source-url": "https://github.com/lbthomsen/subutai-blueprint-wp/archive/master.zip",
+        "source-url": "https://github.com/lbthomsen/subutai-bp-drupal/archive/master.zip",
         "ansible-playbook": "site.yml",
         "extra-vars": [
             {
@@ -51,7 +51,7 @@
         ],
         "groups": [
             {
-                "name": "wp",
+                "name": "drupal",
                 "hostnames": [
                     "${webContainerName}"
                 ]
